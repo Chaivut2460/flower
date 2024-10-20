@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers for Nisha</title>
+    <style>
+        body {
+            background: #000;
+            overflow: hidden;
+            position: relative;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4em;
+            animation: fadeIn 2s ease-in-out;
+            color: #f5f5f5; /* Light color for the text */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background: linear-gradient(to bottom, #049aea, #0261aa); /* Gradient from light to dark yellow */
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(127, 229, 254, 0.7), 0 0 40px rgba(185, 230, 242, 0.7);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Falling stars */
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+
+        /* Randomly generate stars */
+        @keyframes star {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Create stars */
+        .star:nth-child(1) { left: 20%; animation-duration: 2s; animation-delay: 0s; }
+        .star:nth-child(2) { left: 40%; animation-duration: 3s; animation-delay: 0.5s; }
+        .star:nth-child(3) { left: 60%; animation-duration: 4s; animation-delay: 1s; }
+        .star:nth-child(4) { left: 80%; animation-duration: 2.5s; animation-delay: 1.5s; }
+        .star:nth-child(5) { left: 10%; animation-duration: 3.5s; animation-delay: 2s; }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Flowers for Nisha</h1>
+        <a href="flower.html" class="button">Press to receive flowers</a>
+    </div>
+    
+    <!-- Stars -->
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+</body>
+</html>
