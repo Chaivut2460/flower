@@ -141,6 +141,7 @@ body {
   animation: moving-flower-3 4s linear infinite;
 }
 .flower--3 .flower__line {
+   height: 90vmin;
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
