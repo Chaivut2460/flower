@@ -135,7 +135,7 @@ body {
   animation: blooming-leaf-left var(--fl-speed) 1.3s backwards;
 }
 .flower--3 {
-  left: 65%;
+  left: 35%;
   transform: rotate(-15deg);
   -webkit-animation: moving-flower-3 4s linear infinite;
   animation: moving-flower-3 4s linear infinite;
